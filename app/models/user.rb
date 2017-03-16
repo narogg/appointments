@@ -17,7 +17,12 @@ class User < ActiveRecord::Base
   end
   
   def upcoming_appointments
-    appointments.order(appointment_time: :desc).select { |a| a.appointment_time > (DateTime.now) }
+    #appointments.order(appointment_time: :asc).select { |a| a.appointment_time > (DateTime.now) }
+    appointments.where("appointment_time LIKE ?", "#{Date.today}%").order('appointment_time asc')
+    #appointments.where("appointment_time >= ?", Time.zone.now.beginning_of_day)
+    #appointments.find(:all, conditions: ["DATE(appointment_time) = ?", DateTime.now] )
+    #Post.where("created_at >= ?", Time.zone.now.beginning_of_day)
+    #appointments.where("appointment_time >= ?", DateTime.now)
   end
   
 end

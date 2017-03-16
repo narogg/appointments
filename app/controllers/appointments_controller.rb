@@ -7,6 +7,9 @@ class AppointmentsController < ApplicationController
     
   def index 
     @upcoming_appointments = current_user.upcoming_appointments
+    logger.error("tudi tukaj")
+    logger.error(DateTime.now)
+    logger.error(Date.today)
   end 
   
   def show 
