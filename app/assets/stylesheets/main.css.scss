@@ -1,6 +1,6 @@
-$link-color: blue;
+$link-color: white;
 $link-hover-color: lighten($link-color, 55);
-$nav-color: #FFC970;
+$nav-color: #31718F;
 $menu-item-background-color: $nav-color;
 $menu-item-hover-background-color: darken($nav-color, 15);
 
@@ -74,7 +74,7 @@ nav {
 }
 
 h1 a {
-    background: blue;
+    background: black;
     color: white;
     text-decoration: none;
     border-radius: 26px;

@@ -1,1 +1,11 @@
-<h4><%= link_to appointment.client_name, appointment_path(appointment) %>, <%= short_time(appointment) %>-<%= end_time(appointment) %></h4>
+<tr>
+  <td>
+    <%= link_to appointment.client_name, appointment_path(appointment) %> 
+  </td>
+  <td>
+    <%= short_time(appointment) %>-<%= end_time(appointment) %>
+  </td>
+  <td>
+  	<%= appointment_edit_delete_links(appointment) %>
+  </td>
+</tr>

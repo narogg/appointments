@@ -1,9 +1,22 @@
-<h1>Appointments <%= link_to "+ New", new_appointment_path %></h1>
+<h1>Appointments <%= link_to "+ New", new_appointment_path, class: "btn btn-success" %></h1>
 <%= add_weekly_calendar(@appointments) %>
 
-<h3>Upcoming Appointments</h3>
+ <h3>Upcoming Appointments</h3>
+  <div class="table-responsive">
+<table class="table table-bordered table-hover">
+   <thead>
+    <tr class="info">
+      <th>Name</th>
+      <th>Time</th>
+      <th>Modify</th>
+    </tr>
+   </thead>
 <% if @upcoming_appointments.any? %>
+ <tbody>
   <%= render @upcoming_appointments %>
+  </tbody>
+  </table>
+  </div>
 <% else %> 
   <p>No appointments yet.</p>
 <% end %>
