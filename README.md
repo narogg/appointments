@@ -1,1 +1,1 @@
-Appointements app test
+Appointments app test
