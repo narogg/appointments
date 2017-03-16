@@ -5,7 +5,9 @@ $menu-item-background-color: $nav-color;
 $menu-item-hover-background-color: darken($nav-color, 15);
 
 body.home {
-  background: url('https://images.unsplash.com/photo-1421757295538-9c80958e75b0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3628f27cd5768ece147877e2dd792c6c') no-repeat center center fixed; 
+  #background: url('https://images.unsplash.com/photo-1421757295538-9c80958e75b0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3628f27cd5768ece147877e2dd792c6c') no-repeat center center fixed; 
+  #background: url('https://static1.squarespace.com/static/55e9c291e4b04ddb1a99cccb/t/560032e6e4b0e9dd54cba57e/1442853608195/HealthFactory-ChiropracticSpine.jpg') no-repeat center center fixed;
+  background-image: url('chiro.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
